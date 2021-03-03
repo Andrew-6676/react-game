@@ -13,6 +13,6 @@ module.exports = merge(common, {
 		port: 8085
 	},
 	plugins: [
-		new BundleAnalyzerPlugin()
+		// new BundleAnalyzerPlugin()
 	]
 });
