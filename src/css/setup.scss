@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'KidDraws';
+	src: url('../fonts/KidDrawsFontRegular-3g3L.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Paint';
+	src: url('../fonts/Paint-BnM5.ttf');
+	font-weight: bold;
+}
+
+body {
+	background: lightcyan;
+
+	.test_container {
+		text-align: center;
+
+		.test_fonts {
+			font-family: 'KidDraws', sans-serif;
+			font-size: 100px;
+			color: darkblue;
+		}
+	}
+}

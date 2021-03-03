@@ -1,0 +1,16 @@
+.record-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-family: Finger, sans-serif;
+	background: #ffffffad;
+
+	.nick {
+		text-align: left;
+	}
+
+	.date {
+		text-align: center;
+		color: gray;
+	}
+
+}

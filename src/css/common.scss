@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'KidDraws';
+	src: url('../fonts/KidDrawsFontRegular-3g3L.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Paint';
+	src: url('../fonts/Paint-BnM5.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Finger';
+	src: url('../fonts/FingerPaint-Regular.ttf');
+	font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body {
+	position: relative;
+	background: lightcyan;
+}
+header{
+	height: 36px;
+	position: absolute;
+	background: white;
+	width: 100%;
+	z-index: 0;
+	border-bottom: 1px solid #832323;
+}
+
+footer.footer {
+	border-top: 1px solid black;
+	background: #fff;
+	//height: 25px;
+	margin-top: -50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+
+	img {
+		height: 25px;
+		margin-right: 15px;
+	}
+
+	a {
+		font-family: 'Finger', sans-serif;
+		font-size: 0.8em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+#app {
+	min-height: 100%;
+	max-width: 1100px;
+	min-width: 300px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+
+	background-image: url('../img/logo512.png');
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.page-wrapper {
+
+}
+.page {
+	padding: 20px;
+	text-align: center;
+}
+
+.page_title {
+	font-family: 'KidDraws', sans-serif;
+	font-size: 50px;
+	color: darkblue;
+	text-align: center;
+	text-shadow: rgb(0 210 44) 2px 2px 4px;
+}
+
+.paint-font {
+	font-family: 'Paint', sans-serif;
+}
+
+.finter-font {
+	font-family: 'Finger', sans-serif;
+}
+
+.kids-font {
+	font-family: 'KidDraws', sans-serif;
+}
+
+nav {
+	z-index: 100;
+	background: white;
+	height: 35px;
+	text-align: center;
+	ul {
+		padding: 5px;
+		margin: 0;
+
+		li {
+			padding: 0 10px;
+			display: inline-block;
+			font-family: 'Finger', sans-serif;
+
+			a {
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: red;
+			}
+		}
+	}
+}

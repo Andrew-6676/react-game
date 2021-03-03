@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'KidDraws';
+	src: url('../fonts/KidDrawsFontRegular-3g3L.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Paint';
+	src: url('../fonts/Paint-BnM5.ttf');
+	font-weight: bold;
+}
+.game {
+
+}
+.field {
+	display: grid;
+	background: white;
+
+}
+.field-wrapper {
+	position: relative;
+}
+.field_30 {
+	grid-template-columns: repeat(30, 1fr);
+}
+
+.cell {
+	font-size: 6px;
+	background: white;
+	border: 1px solid #00000011;
+	padding-bottom: 100%;
+	height: 0;
+	cursor: pointer;
+
+	&.clicked {
+		background: blue;
+	}
+
+	&.snake-body {
+		background: red;
+	}
+
+	&.snake-head {
+		background: #832323;
+	}
+
+	&.food {
+		background: coral;
+		border-radius: 50%;
+	}
+
+	&.eaten {
+		background: goldenrod;
+	}
+}
+
+
+.off {
+	visibility: hidden;
+	opacity: 0;
+}
+.on {
+	visibility: visible;
+	opacity: 1;
+}
+
+.pause, .gameover {
+	text-align: center;
+	flex-direction: column;
+	cursor: pointer;
+	background: #3cff0099;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 100px;
+	text-shadow: white 2px 2px 0;
+	transition: visibility 0s, opacity 1s linear;
+}
+
+.gameover {
+	background: #ff000088;
+}
+
+.descr {
+	font-size: 14px;
+	text-shadow: none;
+}
+
+input[type='number'] {
+	width: 50px;
+}
